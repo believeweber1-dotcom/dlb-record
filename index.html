@@ -9,15 +9,18 @@
 <body>
   <header>
     <div class="logo">
-      <span class="logo-dlb">DLB</span>
-      <span class="logo-record">RECORD</span>
+      <a href="index.html" style="text-decoration:none;">
+        <span class="logo-dlb">DLB</span>
+        <span class="logo-record">RECORD</span>
+      </a>
     </div>
     <nav>
-      <a href="#">Accueil</a>
-      <a href="#instrumentales">Instrumentales</a>
-      <a href="#drums">Drums & Samples</a>
-      <a href="#gratuit">Gratuit</a>
-      <a href="#services">Services</a>
+      <a href="index.html" class="active">Accueil</a>
+      <a href="instrumentales.html">Instrumentales</a>
+      <a href="drums.html">Drums & Samples</a>
+      <a href="gratuit.html">Gratuit</a>
+      <a href="services.html">Services</a>
+      <a href="a-propos.html">À propos</a>
     </nav>
   </header>
 
@@ -25,45 +28,42 @@
     <section class="hero">
       <h1>Beats. Drums. Samples.</h1>
       <p>Sons professionnels prêts à utiliser. Paiement mobile money. Livraison automatique.</p>
-      <a href="#instrumentales" class="btn-primary">Explorer le catalogue</a>
+      <a href="instrumentales.html" class="btn-primary">Explorer le catalogue</a>
     </section>
 
-    <section id="instrumentales" class="products">
+    <section class="products">
       <h2>Instrumentales en vedette</h2>
       <div class="product-grid">
         <div class="product-card">
           <div class="product-cover"></div>
-          <h3>Beat 01 - Dark Trap</h3>
+          <h3>Dark Trap 01</h3>
           <p class="price">5 000 FC</p>
-          <button class="btn-buy">Acheter</button>
+          <a href="instrumentales.html" class="btn-buy" style="display:block; text-align:center; text-decoration:none;">Voir</a>
         </div>
         <div class="product-card">
           <div class="product-cover"></div>
-          <h3>Beat 02 - Afrobeat</h3>
+          <h3>Afrobeat Vibes</h3>
           <p class="price">5 000 FC</p>
-          <button class="btn-buy">Acheter</button>
+          <a href="instrumentales.html" class="btn-buy" style="display:block; text-align:center; text-decoration:none;">Voir</a>
         </div>
         <div class="product-card">
           <div class="product-cover"></div>
-          <h3>Beat 03 - Drill</h3>
+          <h3>Drill Congo</h3>
           <p class="price">5 000 FC</p>
-          <button class="btn-buy">Acheter</button>
+          <a href="instrumentales.html" class="btn-buy" style="display:block; text-align:center; text-decoration:none;">Voir</a>
         </div>
       </div>
     </section>
 
-    <section id="gratuit" class="free-offer">
+    <section class="free-offer">
       <h2>Offre gratuite</h2>
-      <p>Télécharge un sample gratuit en échange de ton email.</p>
-      <form>
-        <input type="email" placeholder="Ton adresse email" required>
-        <button type="submit" class="btn-primary">Télécharger gratuitement</button>
-      </form>
+      <p>Télécharge un sample exclusif en échange de ton email.</p>
+      <a href="gratuit.html" class="btn-primary">Obtenir gratuitement</a>
     </section>
   </main>
 
   <footer>
-    <p>© 2026 DLB Record — Believe Weber | République démocratique du Congo</p>
+    <p>© 2026 DLB Record — Believe Weber | République démocratique du Congo · <a href="conditions.html" style="color:#666;">Conditions</a></p>
   </footer>
 </body>
 </html>

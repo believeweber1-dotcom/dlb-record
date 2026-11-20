@@ -17,6 +17,8 @@ header {
   align-items: center;
   padding: 1.5rem 2rem;
   border-bottom: 1px solid #1a1a1a;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .logo {
@@ -42,12 +44,13 @@ header {
 nav a {
   color: #cccccc;
   text-decoration: none;
-  margin-left: 1.5rem;
+  margin-left: 1.2rem;
   font-size: 0.95rem;
   transition: color 0.2s;
 }
 
-nav a:hover {
+nav a:hover,
+nav a.active {
   color: #8B0000;
 }
 
@@ -72,6 +75,22 @@ nav a:hover {
   margin-right: auto;
 }
 
+.page-header {
+  text-align: center;
+  padding: 4rem 2rem 2rem;
+}
+
+.page-header h1 {
+  font-size: 2.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.page-header p {
+  color: #aaa;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 .btn-primary {
   display: inline-block;
   background-color: #8B0000;
@@ -90,7 +109,7 @@ nav a:hover {
 }
 
 .products {
-  padding: 4rem 2rem;
+  padding: 2rem 2rem 4rem;
   max-width: 1100px;
   margin: 0 auto;
 }
@@ -160,6 +179,7 @@ nav a:hover {
   text-align: center;
 }
 
+.free-offer h1,
 .free-offer h2 {
   margin-bottom: 1rem;
 }
@@ -193,15 +213,21 @@ footer {
   border-top: 1px solid #1a1a1a;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .hero h1 {
     font-size: 2rem;
   }
   header {
     flex-direction: column;
-    gap: 1rem;
+    text-align: center;
+  }
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
   }
   nav a {
-    margin: 0 0.8rem;
+    margin: 0 0.6rem;
   }
 }
